@@ -4,5 +4,5 @@ export function LogoMark({ className = "", wordmark = false, inverted = false }:
   const file = wordmark
     ? inverted ? "/brand/logo-zsur-invertido.svg" : "/brand/logo-zsur.svg"
     : inverted ? "/brand/isotipo-zsur-invertido.svg" : "/brand/isotipo-zsur.svg";
-  return <Image className={className} src={file} alt={wordmark ? "ZSUR" : "Símbolo de ZSUR"} width={wordmark ? 1180 : 512} height={320} priority={wordmark} />;
+  return <Image className={className} src={file} alt={wordmark ? "ZSUR" : "Símbolo de ZSUR"} width={wordmark ? 780 : 512} height={wordmark ? 206 : 512} priority={wordmark} />;
 }

@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320" fill="none">
-  <title>ZSUR Isotipo</title><desc>Isotipo vectorial de ZSUR.</desc>
-  <path d="M70 58 H340 C392 58 430 94 430 146 C430 182 412 212 381 229 C347 247 303 250 261 250 H232 L286 206 H296 C335 206 364 199 384 182 C402 167 412 145 412 118 C412 84 388 58 350 58 H70 Z" fill="#FFFFFF"/><path d="M170 252 H422 L378 196 H226 L170 252 Z" fill="#FFFFFF"/><path d="M224 252 L301 164 L378 252 Z" fill="#E79F48"/><path d="M112 233 C133 198 173 173 226 162 C272 152 311 132 348 94 L381 123 C344 167 304 195 244 207 C195 217 159 238 137 268 Z" fill="#C4D3D0"/><circle cx="136" cy="225" r="16" fill="#0A2E1C" stroke="#C4D3D0" stroke-width="6"/><circle cx="377" cy="98" r="16" fill="#0A2E1C" stroke="#C4D3D0" stroke-width="6"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="-3 -13 124 121" version="1.1" role="img" aria-label="Isotipo ZSUR opción A, variante invertida">
+ <title>Isotipo ZSUR opción A, variante invertida</title><desc>Reconstrucción vectorial en trazados de la opción A. Fondo transparente.</desc>
+ <defs>
+  <linearGradient id="gris-invertido" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0%" stop-color="#F4FAF9"/><stop offset="45%" stop-color="#C4D3D0"/><stop offset="100%" stop-color="#B1C9C4"/></linearGradient>
+  <linearGradient id="blanco-superior" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C4D3D0"/><stop offset="53%" stop-color="#F2F7F6"/><stop offset="100%" stop-color="#FFF"/></linearGradient>
+  <linearGradient id="naranja" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F79F48"/><stop offset="45%" stop-color="#EB983E"/><stop offset="100%" stop-color="#E79739"/></linearGradient>
+  <linearGradient id="gris-plateado" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0%" stop-color="#C4D3D0"/><stop offset="58%" stop-color="#BACEC8"/><stop offset="100%" stop-color="#D1DFDC"/></linearGradient>
+ </defs>
+ <g><path d="M96.9 18.9 111.5 22.2 65.6 61.8H46.4Z" fill="url(#gris-invertido)"/><path d="M3.4.5h99.7c7.3 0 12.9 5.4 12.9 11.6 0 4-1.9 7.8-4.5 10.1l-14.6-3.3H21.7Z" fill="url(#blanco-superior)"/><path d="M101.5.5h1.6c7.3 0 12.9 5.4 12.9 11.6 0 4-1.9 7.8-4.5 10.1l-14.6-3.3Z" fill="#FFF" opacity=".22"/><path d="M42.6 73.8H115L97.8 93.6H20.4Z" fill="url(#naranja)"/><path d="M46.3 31.3h20.3L11.4 92.9c-1.4 1.5-2.8 1.1-4.2.3C.4 89.3-1.8 82.6 2 75.9Z" fill="url(#gris-plateado)"/></g>
 </svg>
