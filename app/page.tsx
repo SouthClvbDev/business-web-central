@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section className="section shell playground">
-        <Reveal className="playground-copy"><p className="kicker"><i />Una forma simple de trabajar</p><h2>Del problema<br />a una solución <em>concreta.</em></h2><p>Primero entiendo qué necesitás. Después ordeno la información, diseño una experiencia clara y construyo una solución que puedas usar y hacer crecer.</p><Link href="/about" className="text-link">Conocé el enfoque <span>↗</span></Link></Reveal>
+        <Reveal className="playground-copy"><p className="kicker"><i />Una forma simple de trabajar</p><h2>Del problema<br />a una solución <em>concreta.</em></h2><p>Primero entiendo qué necesitás. Después ordeno la información, diseño una experiencia clara y construyo una solución que puedas usar y hacer crecer.</p><Link href="/como-trabajo" className="text-link">Conocé el proceso <span>↗</span></Link></Reveal>
         <Reveal className="terminal process-card" delay={.1}><div><span>UN PROCESO CLARO, DE PRINCIPIO A FIN</span></div><ol><li><b>01</b><span><strong>Entender</strong>El negocio, las personas y el objetivo.</span></li><li><b>02</b><span><strong>Diseñar</strong>Una solución simple y fácil de usar.</span></li><li><b>03</b><span><strong>Construir</strong>Con tecnología sólida y escalable.</span></li><li><b>04</b><span><strong>Mejorar</strong>Medir, aprender y seguir evolucionando.</span></li></ol></Reveal>
       </section>
 

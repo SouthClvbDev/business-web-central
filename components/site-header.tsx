@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["Proyectos", "/projects"], ["Sobre ZSUR", "/about"], ["Ideas", "/lab"]] as const;
+const links = [["Proyectos", "/projects"], ["Cómo trabajo", "/como-trabajo"], ["Sobre ZSUR", "/about"]] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
