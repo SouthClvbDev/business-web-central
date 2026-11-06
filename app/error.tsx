@@ -1,3 +1,3 @@
 "use client";
 
-export default function ErrorPage({ reset }: { reset: () => void }) { return <div className="not-found shell"><p>SYSTEM / ERROR</p><h1>Signal<br /><em>interrupted.</em></h1><span>An unexpected error reached the interface.</span><button onClick={reset}>Try again →</button></div>; }
+export default function ErrorPage({ reset }: { reset: () => void }) { return <div className="not-found shell"><p>ERROR DEL SISTEMA</p><h1>Algo no salió<br /><em>como esperábamos.</em></h1><span>Ocurrió un error inesperado al cargar esta página.</span><button onClick={reset}>Intentar nuevamente →</button></div>; }

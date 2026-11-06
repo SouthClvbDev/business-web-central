@@ -5,16 +5,16 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ProjectCard } from "./project-card";
 import type { Project, ProjectCategory, ProjectStatus } from "@/lib/projects";
 
-type Filter = "All" | ProjectCategory | ProjectStatus;
+type Filter = "Todos" | ProjectCategory | ProjectStatus;
 
 export function ProjectExplorer({ projects }: { projects: Project[] }) {
-  const [filter, setFilter] = useState<Filter>("All");
+  const [filter, setFilter] = useState<Filter>("Todos");
   const reduced = useReducedMotion();
-  const filters: Filter[] = ["All", ...new Set(projects.flatMap((p) => [p.category, p.status]))];
-  const visible = useMemo(() => projects.filter((p) => filter === "All" || p.category === filter || p.status === filter), [filter, projects]);
+  const filters: Filter[] = ["Todos", ...new Set(projects.flatMap((p) => [p.category, p.status]))];
+  const visible = useMemo(() => projects.filter((p) => filter === "Todos" || p.category === filter || p.status === filter), [filter, projects]);
   return (
     <>
-      <div className="filters" aria-label="Project filters">
+      <div className="filters" aria-label="Filtros de proyectos">
         {filters.map((item) => <button key={item} onClick={() => setFilter(item)} aria-pressed={filter === item}>{item}</button>)}
       </div>
       <motion.div layout={!reduced} className="project-grid">

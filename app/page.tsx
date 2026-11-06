@@ -5,10 +5,10 @@ import { Reveal } from "@/components/reveal";
 import { projects } from "@/lib/projects";
 
 const disciplines = [
-  ["01", "Web applications", "Robust interfaces shaped around real workflows."],
-  ["02", "Digital products", "From a sharp idea to a system ready to evolve."],
-  ["03", "Automation + AI", "Useful intelligence embedded where it removes friction."],
-  ["04", "Integrations", "Independent tools connected into coherent experiences."],
+  ["01", "Sitios web", "Presencias digitales claras, rápidas y preparadas para generar consultas."],
+  ["02", "Aplicaciones", "Sistemas web a medida para organizar y simplificar procesos reales."],
+  ["03", "Automatización e IA", "Herramientas que reducen tareas repetitivas y ayudan a trabajar mejor."],
+  ["04", "Integraciones", "Servicios y plataformas conectados para que la información fluya sin fricción."],
 ];
 
 export default function Home() {
@@ -16,32 +16,32 @@ export default function Home() {
     <>
       <section className="hero shell">
         <div className="hero-copy">
-          <p className="kicker"><i />Independent digital laboratory · Argentina</p>
-          <h1>Ideas, <em>engineered</em><br />into digital<br />products.</h1>
-          <div className="hero-bottom"><p>ZSUR is where experimentation meets product thinking. A growing ecosystem of useful, expressive and scalable experiences.</p><Link href="/projects" className="round-link" aria-label="Explore projects">↘</Link></div>
+          <p className="kicker"><i />Diseño y desarrollo web · Argentina</p>
+          <h1>Soluciones digitales<br />para hacer crecer<br /><em>tu negocio.</em></h1>
+          <div className="hero-bottom"><p>Diseño sitios, aplicaciones y automatizaciones que ayudan a negocios y emprendimientos a vender, organizarse y avanzar.</p><Link href="#contact" className="round-link" aria-label="Ir a contacto">↘</Link></div>
         </div>
         <LabOrbit />
-        <span className="scroll-mark">SCROLL TO EXPLORE <i /></span>
+        <span className="scroll-mark">CONOCÉ MI TRABAJO <i /></span>
       </section>
 
       <section className="section shell">
-        <Reveal className="section-heading"><p className="kicker"><i />Selected work</p><h2>Products in<br /><em>the wild.</em></h2><Link href="/projects">View all projects ↗</Link></Reveal>
+        <Reveal className="section-heading"><p className="kicker"><i />Proyectos seleccionados</p><h2>Soluciones que ya<br /><em>están funcionando.</em></h2><Link href="/projects">Ver todos los proyectos ↗</Link></Reveal>
         <div className="project-grid">{projects.filter((p) => p.featured).map((project, index) => <Reveal key={project.id} delay={index * .08}><ProjectCard project={project} index={index} /></Reveal>)}</div>
       </section>
 
       <section className="section shell playground">
-        <Reveal className="playground-copy"><p className="kicker"><i />Digital playground</p><h2>Built to test.<br />Made to <em>learn.</em></h2><p>Small technical experiments, interface studies and prototypes live here before they become products—or teach us something useful.</p><Link href="/lab" className="text-link">Enter the lab <span>↗</span></Link></Reveal>
-        <Reveal className="terminal" delay={.1}><div><i /><i /><i /><span>zsur://lab/current</span></div><pre><code><b>01</b> const idea = observe(problem);{"\n"}<b>02</b> const prototype = build(idea);{"\n"}<b>03</b> const signal = test(prototype);{"\n"}<b>04</b>{"\n"}<b>05</b> if (signal.isUseful) {'{'}{"\n"}<b>06</b>   ship(signal);{"\n"}<b>07</b> {'}'} else {'{'} learn(signal); {'}'}</code></pre><span>● ITERATION ACTIVE</span></Reveal>
+        <Reveal className="playground-copy"><p className="kicker"><i />Una forma simple de trabajar</p><h2>Del problema<br />a una solución <em>concreta.</em></h2><p>Primero entiendo qué necesitás. Después ordeno la información, diseño una experiencia clara y construyo una solución que puedas usar y hacer crecer.</p><Link href="/about" className="text-link">Conocé el enfoque <span>↗</span></Link></Reveal>
+        <Reveal className="terminal process-card" delay={.1}><div><span>UN PROCESO CLARO, DE PRINCIPIO A FIN</span></div><ol><li><b>01</b><span><strong>Entender</strong>El negocio, las personas y el objetivo.</span></li><li><b>02</b><span><strong>Diseñar</strong>Una solución simple y fácil de usar.</span></li><li><b>03</b><span><strong>Construir</strong>Con tecnología sólida y escalable.</span></li><li><b>04</b><span><strong>Mejorar</strong>Medir, aprender y seguir evolucionando.</span></li></ol></Reveal>
       </section>
 
       <section className="section shell build-section">
-        <Reveal className="section-heading"><p className="kicker"><i />What I build</p><h2>Systems with<br /><em>intent.</em></h2></Reveal>
+        <Reveal className="section-heading"><p className="kicker"><i />Qué puedo hacer por tu negocio</p><h2>Tecnología con<br /><em>un objetivo claro.</em></h2></Reveal>
         <div className="discipline-grid">{disciplines.map(([number, title, text]) => <Reveal className="discipline" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p><i>↗</i></Reveal>)}</div>
       </section>
 
-      <section className="manifesto shell"><Reveal><p>THE OPERATING PRINCIPLE</p><blockquote>Useful enough to matter.<br />Scalable enough to grow.<br /><em>Distinct enough to remember.</em></blockquote><span>ZSUR / DEVELOPMENT PHILOSOPHY</span></Reveal></section>
+      <section className="manifesto shell"><Reveal><p>MI FORMA DE CONSTRUIR</p><blockquote>Simple para quien lo usa.<br />Sólido para tu negocio.<br /><em>Preparado para crecer.</em></blockquote><span>ZSUR / DISEÑO Y DESARROLLO</span></Reveal></section>
 
-      <section id="contact" className="contact shell"><Reveal><p className="kicker"><i />Open channel</p><h2>Have an idea<br />worth <em>building?</em></h2><p>Professional contact channels will appear here when they are confirmed.</p><span className="contact-pulse"><i />SIGNAL STANDBY</span></Reveal></section>
+      <section id="contact" className="contact shell"><Reveal><p className="kicker"><i />Hablemos</p><h2>¿Tenés un proyecto<br />o un problema para <em>resolver?</em></h2><p>Contame qué necesitás y vemos juntos cuál es la mejor manera de avanzar.</p><span className="contact-pulse"><i />CANAL DE CONTACTO PRÓXIMAMENTE</span></Reveal></section>
     </>
   );
 }

@@ -13,7 +13,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         <p>{project.eyebrow}</p>
         <h3>{project.name}</h3>
         <span>{project.summary}</span>
-        <b>Enter project <i>↗</i></b>
+        <b>Ver proyecto <i>↗</i></b>
       </div>
     </Link>
   );

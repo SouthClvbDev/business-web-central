@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 
-export const metadata: Metadata = { title: "Lab", description: "Experiments and prototypes from ZSUR Digital Lab.", alternates: { canonical: "/lab" } };
+export const metadata: Metadata = { title: "Ideas", description: "Ideas, prototipos y nuevas soluciones en desarrollo dentro de ZSUR.", alternates: { canonical: "/lab" } };
 
-const experiments = [["001", "Reactive type field", "Interaction study", "Queued"], ["002", "Spatial interface", "Web experiment", "Queued"], ["003", "Useful AI patterns", "Product research", "Active"]];
+const experiments = [["001", "Interfaces que responden", "Estudio de interacción", "Próximamente"], ["002", "Experiencias espaciales", "Experimento web", "Próximamente"], ["003", "IA aplicada a procesos", "Investigación de producto", "En desarrollo"]];
 
 export default function LabPage() {
-  return <div className="page shell"><Reveal className="page-intro"><p className="kicker"><i />Experimental index</p><h1>Curiosity,<br /><em>in public.</em></h1><p>A growing space for prototypes, interface studies and technical questions. Experiments will be published as they become ready to share.</p></Reveal><div className="experiment-list">{experiments.map(([id, title, type, state]) => <Reveal className="experiment" key={id}><span>{id}</span><h2>{title}</h2><p>{type}</p><b><i />{state}</b></Reveal>)}</div></div>;
+  return <div className="page shell"><Reveal className="page-intro"><p className="kicker"><i />Ideas en desarrollo</p><h1>Explorar también<br />es parte de <em>crear.</em></h1><p>Un espacio para prototipos, pruebas de interfaz y nuevas formas de aplicar tecnología a problemas cotidianos.</p></Reveal><div className="experiment-list">{experiments.map(([id, title, type, state]) => <Reveal className="experiment" key={id}><span>{id}</span><h2>{title}</h2><p>{type}</p><b><i />{state}</b></Reveal>)}</div></div>;
 }

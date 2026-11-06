@@ -16,8 +16,8 @@ export function LabOrbit() {
       </motion.div>
       <div className="orbit-ring orbit-ring-a" />
       <div className="orbit-ring orbit-ring-b" />
-      <span className="orbit-label label-a">SYSTEM / ONLINE</span>
-      <span className="orbit-label label-b">34°36&apos;S · LAB 001</span>
+      <span className="orbit-label label-a">DISEÑO + DESARROLLO</span>
+      <span className="orbit-label label-b">ARGENTINA · ZSUR</span>
     </div>
   );
 }
