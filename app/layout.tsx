@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   applicationName: "ZSUR Digital Lab",
   openGraph: { title: "ZSUR — Digital Lab", description: "Ideas engineered into digital products.", url: "https://zsur.ar", siteName: "ZSUR", type: "website", locale: "en_US" },
   twitter: { card: "summary_large_image", title: "ZSUR — Digital Lab", description: "Ideas engineered into digital products." },
+  icons: { icon: "/favicon.svg" },
   alternates: { canonical: "/" },
 };
 
