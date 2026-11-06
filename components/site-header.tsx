@@ -10,7 +10,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   return (
     <header className="site-header">
-      <Link href="/" className="brand" aria-label="Inicio de ZSUR"><LogoMark /><span>ZSUR</span><small>soluciones digitales</small></Link>
+      <Link href="/" className="brand" aria-label="Inicio de ZSUR"><LogoMark wordmark /></Link>
       <nav aria-label="Navegación principal">
         {links.map(([label, href]) => <Link key={href} href={href} aria-current={pathname.startsWith(href) ? "page" : undefined}>{label}</Link>)}
       </nav>
