@@ -26,7 +26,7 @@ Add one typed entry to `lib/projects.ts`. The project index, filters, home cards
 
 ## Deployment to Vercel
 
-1. Import this GitHub repository into Vercel and keep the detected Next.js settings.
+1. Import this GitHub repository into Vercel. The committed `vercel.json` fixes the framework to Next.js and publishes `.next`.
 2. Deploy a preview and verify all routes and outbound project links.
 3. Add `zsur.ar` under **Project → Settings → Domains**.
 4. Apply only the DNS records Vercel provides for the apex domain. Do not alter the existing `sweetdelfina` or `electroclima` subdomain records.
