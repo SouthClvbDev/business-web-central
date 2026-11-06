@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
+import { LogoMark } from "./logo-mark";
 
 export function LabOrbit() {
   const reduced = useReducedMotion();
@@ -11,9 +12,7 @@ export function LabOrbit() {
         className="orbit-core"
         animate={reduced ? undefined : { rotate: 360 }}
         transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
-      >
-        <span>ZS</span><span>UR</span>
-      </motion.div>
+      ><LogoMark className="orbit-logo" /></motion.div>
       <div className="orbit-ring orbit-ring-a" />
       <div className="orbit-ring orbit-ring-b" />
       <span className="orbit-label label-a">DISEÑO + DESARROLLO</span>

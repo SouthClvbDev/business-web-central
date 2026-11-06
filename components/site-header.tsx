@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LogoMark } from "./logo-mark";
 
 const links = [["Proyectos", "/projects"], ["Cómo trabajo", "/como-trabajo"], ["Sobre ZSUR", "/about"]] as const;
 
@@ -9,7 +10,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   return (
     <header className="site-header">
-      <Link href="/" className="brand" aria-label="Inicio de ZSUR"><span>ZSUR</span><small>soluciones digitales</small></Link>
+      <Link href="/" className="brand" aria-label="Inicio de ZSUR"><LogoMark /><span>ZSUR</span><small>soluciones digitales</small></Link>
       <nav aria-label="Navegación principal">
         {links.map(([label, href]) => <Link key={href} href={href} aria-current={pathname.startsWith(href) ? "page" : undefined}>{label}</Link>)}
       </nav>
